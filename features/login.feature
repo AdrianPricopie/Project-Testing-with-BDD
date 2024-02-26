@@ -1,9 +1,9 @@
 Feature: Login Feature
 
-
+  Background:
+    Given I am on the login page
 
   Scenario: Login with wrong credentials
-    Given I am on the login page
     When I enter a wrong username
     And I enter a wrong password
     And I press login button
