@@ -33,7 +33,7 @@ def step_impl(context):
 @when('I leave both username and password fields empty')
 def step_impl(context):
     context.LoginPage.leave_both_username_password_field()
-    
+
 
 
 @then('I should see an error message')
@@ -42,12 +42,15 @@ def step_impl(context):
     expected_result_message = 'Please enter a username and password.'
     assert actual_error_message in expected_result_message
 
+
 @then('I should be redirected to the dashboard')
 def step_impl(context):
     pass
 
 @when('I leave username field empty')
 def step_impl(context):
-    pass
+    context.LoginPage.leave_username_field_empty()
+
+
 
 

@@ -30,6 +30,9 @@ class LoginPage(Browser):
         self.driver.find_element(*self.USERNAME_FIELD_SELECTOR).clear()
         self.driver.find_element(*self.PASSWORD_FIELD_SELECTOR).click()
 
+    def leave_username_field_empty(self):
+        self.driver.find_element(*self.USERNAME_FIELD_SELECTOR).clear()
+
 
 
 
