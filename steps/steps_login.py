@@ -32,7 +32,8 @@ def step_impl(context):
 
 @when('I leave both username and password fields empty')
 def step_impl(context):
-    pass
+    context.LoginPage.leave_both_username_password_field()
+    
 
 
 @then('I should see an error message')

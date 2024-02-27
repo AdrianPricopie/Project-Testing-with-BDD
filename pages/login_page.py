@@ -26,6 +26,9 @@ class LoginPage(Browser):
     def get_error_message(self):
         return self.driver.find_element(*self.TITLE_ERROR_LOGIN_SELECTOR).text
 
+    def leave_both_username_password_field(self):
+        self.driver.find_element(*self.USERNAME_FIELD_SELECTOR).clear()
+        self.driver.find_element(*self.PASSWORD_FIELD_SELECTOR).click()
 
 
 
