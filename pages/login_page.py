@@ -10,14 +10,15 @@ class LoginPage(Browser):
     TITLE_ERROR_LOGIN_SELECTOR = (By.CSS_SELECTOR, '.error')
 
 
+
     def navigate_to_login_page(self):
-        self.driver.get('https://parabank.parasoft.com/parabank/index.htm')
+        self.driver.get('https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC')
 
-    def enter_wrong_username(self):
-        self.driver.find_element(*self.USERNAME_FIELD_SELECTOR).send_keys('FDASFADS')
+    def enter_username(self, username):
+        self.driver.find_element(*self.USERNAME_FIELD_SELECTOR).send_keys(username)
 
-    def enter_wrong_password(self):
-        self.driver.find_element(*self.PASSWORD_FIELD_SELECTOR).send_keys('fdsafasd32')
+    def enter_password(self, password):
+        self.driver.find_element(*self.PASSWORD_FIELD_SELECTOR).send_keys(password)
 
     def click_login_button(self):
         self.driver.find_element(*self.LOGIN_BUTTON_SELECTOR).click()
