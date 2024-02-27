@@ -9,8 +9,6 @@ class LoginPage(Browser):
     LOGIN_BUTTON_SELECTOR = (By.CSS_SELECTOR, 'input[type="submit"]')
     TITLE_ERROR_LOGIN_SELECTOR = (By.CSS_SELECTOR, '.error')
 
-
-
     def navigate_to_login_page(self):
         self.driver.get('https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC')
 
@@ -32,9 +30,3 @@ class LoginPage(Browser):
 
     def leave_username_field_empty(self):
         self.driver.find_element(*self.USERNAME_FIELD_SELECTOR).clear()
-
-
-
-
-
-

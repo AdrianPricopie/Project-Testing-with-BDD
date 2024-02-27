@@ -30,10 +30,10 @@ def step_impl(context):
     expected_result_message = 'An internal error has occurred and has been logged.'
     assert expected_result_message in actual_error_message
 
+
 @when('I leave both username and password fields empty')
 def step_impl(context):
     context.LoginPage.leave_both_username_password_field()
-
 
 
 @then('I should see an error message')
@@ -47,10 +47,7 @@ def step_impl(context):
 def step_impl(context):
     pass
 
+
 @when('I leave username field empty')
 def step_impl(context):
     context.LoginPage.leave_username_field_empty()
-
-
-
-
