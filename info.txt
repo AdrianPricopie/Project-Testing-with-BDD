@@ -1,0 +1,7 @@
+ForgotPassword Feature:
+I created an account (see on photo 'signup2' and 'account_created') and afterward, I accessed the forgot password page.
+Despite entering wrong credentials,with only the SSN being correct (picture 'wrong credentials correct ssn number'),
+to my surprise, my account was found. We do not have the documentation,but we are sure that there is a bug because
+it is not normal to locate an account without all the correct credentials,especially since all fields are mandatory.
+Instead of being met with an error message, I was redirected to the information page. It seems like the system was able
+to locate my account despite the incorrect information provided during the password recovery process.
