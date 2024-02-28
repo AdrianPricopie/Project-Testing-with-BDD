@@ -12,13 +12,13 @@ class ForgotPasswordPage(Browser):
         self.driver.get('https://parabank.parasoft.com/parabank/index.htm')
 
     def click_forgot_password_button(self):
-        self.driver.find_element(*ForgotPasswordLocators.FORGOT_LOGIN_BUTTON_SELECTOR).click()
+        self.driver.find_element(*ForgotPasswordLocators.FORGOT_LOGIN_BUTTON).click()
 
     def get_password_reset_page(self):
         return self.driver.find_element(*ForgotPasswordLocators.VALIDATE_ACCOUNT_PAGE).text
 
     def click_find_login_info_button(self):
-        self.driver.find_element(*ForgotPasswordLocators.FIND_LOGIN_INFO_BUTTON_SELECTOR).click()
+        self.driver.find_element(*ForgotPasswordLocators.FIND_LOGIN_INFO_BUTTON).click()
 
     def get_error_message_empty_fields(self):
         firstname_error = self.driver.find_element(*ForgotPasswordLocators.FNAME_ERROR).text
@@ -34,33 +34,33 @@ class ForgotPasswordPage(Browser):
         return error_messages
 
     def enter_firstname(self, firstname):
-        self.driver.find_element(*ForgotPasswordLocators.FIRST_NAME_FIELD_SELECTOR).send_keys(firstname)
+        self.driver.find_element(*ForgotPasswordLocators.FIRST_NAME_FIELD).send_keys(firstname)
 
     def enter_lastname(self, lastname):
-        self.driver.find_element(*ForgotPasswordLocators.LAST_NAME_FIELD_SELECTOR).send_keys(lastname)
+        self.driver.find_element(*ForgotPasswordLocators.LAST_NAME_FIELD).send_keys(lastname)
 
     def enter_address(self, address):
-        self.driver.find_element(*ForgotPasswordLocators.ADDRESS_FIELD_SELECTOR).send_keys(address)
+        self.driver.find_element(*ForgotPasswordLocators.ADDRESS_FIELD).send_keys(address)
 
     def enter_city(self, city):
-        self.driver.find_element(*ForgotPasswordLocators.CITY_FIELD_SELECTOR).send_keys(city)
+        self.driver.find_element(*ForgotPasswordLocators.CITY_FIELD).send_keys(city)
 
     def enter_state(self, state):
-        self.driver.find_element(*ForgotPasswordLocators.STATE_FIELD_SELECTOR).send_keys(state)
+        self.driver.find_element(*ForgotPasswordLocators.STATE_FIELD).send_keys(state)
 
     def enter_zipcode(self, zipcode):
-        self.driver.find_element(*ForgotPasswordLocators.ZIP_CODE_FIELD_SELECTOR).send_keys(zipcode)
+        self.driver.find_element(*ForgotPasswordLocators.ZIP_CODE_FIELD).send_keys(zipcode)
 
     def enter_ssn(self, ssn):
-        self.driver.find_element(*ForgotPasswordLocators.SSN_FILED_SELECTOR).send_keys(ssn)
+        self.driver.find_element(*ForgotPasswordLocators.SSN_FILED).send_keys(ssn)
 
     def get_error_message_wrong_credentials(self):
-        return self.driver.find_element(*ForgotPasswordLocators.ERROR_MESSAGE_SELECTOR).text
+        return self.driver.find_element(*ForgotPasswordLocators.ERROR_MESSAGE).text
 
     def get_information_page(self):
         return self.driver.find_element(*ForgotPasswordLocators.GET_INFORMATION_PAGE).text
 
     def log_out(self):
-        self.driver.find_element(*ForgotPasswordLocators.LOG_OUT_SELECTOR).click()
+        self.driver.find_element(*ForgotPasswordLocators.LOG_OUT).click()
         time.sleep(2)
 
