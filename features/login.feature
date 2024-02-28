@@ -3,12 +3,18 @@ Feature: Login Feature
   Background:
     Given I am on the login page
 
-  @wrong_credentials
-  Scenario: Login with wrong credentials
-    When I enter "robert123" in username field
-    And I enter "123robert" in password field
-    And I press login button
-    Then I should see an internal error message
+@wrong_credentials
+Scenario Outline: Login with wrong credentials
+  When I enter "<username>" in username field
+  And I enter "<password>" in password field
+  And I press login button
+  Then I should see an internal error message
+
+  Examples:
+    | username  | password  |
+    | robert123 | 123robert |
+    | user1     | pass1     |
+    | user2     | pass2     |
 
   @empty_username_and_password
   Scenario: Login with both empty username and password
