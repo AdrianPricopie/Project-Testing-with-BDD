@@ -2,6 +2,7 @@ from browser import Browser
 from pages.customercare_page import CustomerCarePage
 from pages.forgotpassword_page import ForgotPasswordPage
 from pages.login_page import LoginPage
+from pages.register_page import RegisterPage
 
 
 def before_all(context):
@@ -9,6 +10,7 @@ def before_all(context):
     context.LoginPage = LoginPage()
     context.CustomerCarePage = CustomerCarePage()
     context.ForgotPasswordPage = ForgotPasswordPage()
+    context.RegisterPage = RegisterPage()
 
 
 def after_all(context):
