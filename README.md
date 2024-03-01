@@ -75,4 +75,11 @@ All materials herein are used solely for simulating a realistic online banking w
 
 - Roles needed for the project are allocated.
 - Functional specifications are defined.
-  
+- Approved Project Schedule
+
+## 2.1.1 Exit Criteria:
+
+- To provide a confirmation message of successful registration.
+- 90% of tests are passed.
+- Completion of role allocation.
+- Approval of the defined functional specifications.
