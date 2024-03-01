@@ -80,7 +80,7 @@ All materials herein are used solely for simulating a realistic online banking w
 - Functional specifications are defined.
 - Approved Project Schedule
 
-## 2.1.1 Exit Criteria:
+## Exit Criteria:
 
 - To provide a confirmation message of successful registration.
 - 90% of tests are passed.
