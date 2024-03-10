@@ -11,4 +11,4 @@ class CustomercareLocators:
     EMAIL_ERROR = (By.CSS_SELECTOR, 'span[id="email.errors"]')
     PHONE_ERROR = (By.CSS_SELECTOR, 'span[id="phone.errors"]')
     MESSAGE_ERROR = (By.CSS_SELECTOR, 'span[id="message.errors"]')
-    THANK_YOU_MESSAGE  = (By.XPATH, '//*[@id="rightPanel"]/p[1]')
+    THANK_YOU_MESSAGE = (By.XPATH, '//*[@id="rightPanel"]/p[1]')

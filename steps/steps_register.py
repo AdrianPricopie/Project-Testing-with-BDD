@@ -17,7 +17,7 @@ def step_impl(context):
 
 @when('I leave all the fields empty')
 def step_impl(context):
-    pass
+    context.RegisterPage.leave_all_the_field()
 
 @when('I click register button')
 def step_impl(context):
