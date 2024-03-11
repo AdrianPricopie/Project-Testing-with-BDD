@@ -1,3 +1,4 @@
+from datetime import datetime
 import time
 
 from behave import *
@@ -27,8 +28,9 @@ def step_impl(context):
 @then('I should see an internal error message')
 def step_impl(context):
     actual_error_message = context.LoginPage.get_error_message()
-    expected_result_message = 'The username and password could not be verified.'
+    expected_result_message = 'An internal error has occurred and has been logged.'
     assert expected_result_message in actual_error_message
+
 
 
 @when('I leave both username and password fields empty')
@@ -47,13 +49,21 @@ def step_impl(context):
 def step_impl(context):
     actual_message = context.LoginPage.get_dashboard_page()
     expected_result = 'Accounts Overview'
-    assert expected_result in actual_message
+    if expected_result not in actual_message:
+        # Capture and save screenshot in case of failure
+        screenshot_name = 'C:/Users/adi_d/PycharmProjects/ProjectQA_BDD/Project-Testing-with-BDD/Screenshots/' + 'Dashboard_Redirection_Failure' + '_' + datetime.now().strftime(
+            '%d-%m-%Y') + '.png'
+
+        context.browser.driver.save_screenshot(screenshot_name)
+
+        # Raise AssertionError with custom message
+        raise AssertionError(f'Test failed. Screenshot saved at: {screenshot_name}')
 
 
 @when('I leave username field empty')
 def step_impl(context):
     context.LoginPage.leave_username_field_empty()
 
-@then('I click on log out button')
-def step_impl(context):
-    context.LoginPage.log_out()
+# @then('I click on log out button')
+# def step_impl(context):
+#     context.LoginPage.log_out()

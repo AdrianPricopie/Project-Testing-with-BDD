@@ -24,7 +24,7 @@ Feature: ForgotPassword Feature
 
   @Forgot_password_correct_credentials
   Scenario: Reset password with correct credentials
-     When I enter "John" in first name field
+    When I enter "John" in first name field
     And I enter "Smith" in last name field
     And I enter "Main street" in address field
     And I enter "Anytown" in city field

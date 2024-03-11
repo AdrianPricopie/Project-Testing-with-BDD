@@ -18,7 +18,6 @@ class RegisterLocators:
         'CONFIRM_PASSWORD': (By.CSS_SELECTOR, '#repeatedPassword'),
     }
     field_message_error = {
-            'REGISTER_BUTTON': (By.CSS_SELECTOR, 'input[value="Register"]'),
             'FNAME_ERROR': (By.CSS_SELECTOR, 'span[id="customer.firstName.errors"]'),
             'LNAME_ERROR': (By.CSS_SELECTOR, 'span[id="customer.lastName.errors"]'),
             'ADDRESS_ERROR': (By.CSS_SELECTOR, 'span[id="customer.address.street.errors"]'),

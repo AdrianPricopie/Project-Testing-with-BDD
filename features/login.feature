@@ -22,13 +22,12 @@ Scenario Outline: Login with wrong credentials
     And I press login button
     Then I should see an error message
 
-  @correct_credentials
+  @login_correct_credentials
   Scenario: Login with correct credentials
-    When I enter "John Smith" in username field
-    And I enter "password" in password field
+    When I enter "robert2" in username field
+    And I enter "robert2" in password field
     And I press login button
     Then I should be redirected to the dashboard
-    And I click on log out button
 
   @empty_username_field
   Scenario: Login with empty username field
