@@ -27,7 +27,7 @@ def step_impl(context):
 @then('I should see an internal error message')
 def step_impl(context):
     actual_error_message = context.LoginPage.get_error_message()
-    expected_result_message = 'An internal error has occurred and has been logged.'
+    expected_result_message = 'The username and password could not be verified.'
     assert expected_result_message in actual_error_message
 
 

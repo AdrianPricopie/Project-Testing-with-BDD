@@ -11,7 +11,7 @@ class RegisterPage(Browser):
         self.driver.find_element(*RegisterLocators.REGISTER_LINK_BUTTON).click()
 
     def get_register_page(self):
-       return self.driver.find_element(*RegisterLocators.VALIDATE_ACCOUNT_PAGE).text
+        return self.driver.find_element(*RegisterLocators.VALIDATE_ACCOUNT_PAGE).text
 
     def click_register_button(self):
         self.driver.find_element(*RegisterLocators.REGISTER_BUTTON).click()
@@ -22,8 +22,6 @@ class RegisterPage(Browser):
             error_messages.append(self.driver.find_element(*locator).text)
 
         return ",".join(error_messages)
-
-
 
     def enter_first_name(self, firstname):
         self.driver.find_element(*RegisterLocators.fields_dict['FIRST_NAME']).send_keys(firstname)

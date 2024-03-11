@@ -7,4 +7,4 @@ class Browser:
     driver.implicitly_wait(3)
 
     def close(self):
-        self.driver.quit()
+        self.driver.close()

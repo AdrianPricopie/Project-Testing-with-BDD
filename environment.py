@@ -1,3 +1,5 @@
+import time
+
 from browser import Browser
 from pages.customercare_page import CustomerCarePage
 from pages.forgotpassword_page import ForgotPasswordPage
@@ -14,4 +16,5 @@ def before_all(context):
 
 
 def after_all(context):
-    context.browser.quit()
+    time.sleep(2)
+    context.browser.driver.close()
