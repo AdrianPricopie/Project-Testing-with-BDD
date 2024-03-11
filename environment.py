@@ -16,5 +16,4 @@ def before_all(context):
 
 
 def after_all(context):
-    time.sleep(2)
-    context.browser.driver.close()
+    context.browser.close()g
