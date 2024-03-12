@@ -1,3 +1,5 @@
+import time
+
 from selenium.webdriver.common.by import By
 
 from browser import Browser
@@ -8,6 +10,8 @@ class LoginPage(Browser):
     PASSWORD_FIELD_SELECTOR = (By.CSS_SELECTOR, 'input[type="password"]')
     LOGIN_BUTTON_SELECTOR = (By.CSS_SELECTOR, 'input[type="submit"]')
     TITLE_ERROR_LOGIN_SELECTOR = (By.CSS_SELECTOR, '.error')
+    LOGIN_DASHBOARD = (By.CSS_SELECTOR, '.title')
+    LOG_OUT_BUTTON = (By.PARTIAL_LINK_TEXT, 'Log')
 
     def navigate_to_login_page(self):
         self.driver.get('https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC')
@@ -30,3 +34,10 @@ class LoginPage(Browser):
 
     def leave_username_field_empty(self):
         self.driver.find_element(*self.USERNAME_FIELD_SELECTOR).clear()
+
+    def get_dashboard_page(self):
+        return self.driver.find_element(*self.LOGIN_DASHBOARD).text
+
+    def log_out(self):
+        self.driver.find_element(*self.LOG_OUT_BUTTON).click()
+        time.sleep(2)

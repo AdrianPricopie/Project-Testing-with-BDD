@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\adi_d\PycharmProjects\ProjectQA_BDD\Project-Testing-with-BDD\venv
+set VIRTUAL_ENV=C:\Users\Robert\PycharmProjects\Project-Testing-with-BDD\venv
 
 if not defined PROMPT set PROMPT=$P$G
 

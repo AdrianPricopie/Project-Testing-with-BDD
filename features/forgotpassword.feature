@@ -7,8 +7,7 @@ Feature: ForgotPassword Feature
 
   @Forgot_password_empty_fields
   Scenario: Reset password with empty fields
-    When I leave empty all the fields
-    And I click on find my login info button
+    When I click on find my login info button
     Then I should see an error message for the empty fields
 
   @Forgot_password_wrong_credentials
@@ -22,5 +21,18 @@ Feature: ForgotPassword Feature
     And I enter "222" in SSN field
     And I click on find my login info button
     Then I should see an error message due to wrong credentials
+
+  @Forgot_password_correct_credentials
+  Scenario: Reset password with correct credentials
+     When I enter "John" in first name field
+    And I enter "Smith" in last name field
+    And I enter "Main street" in address field
+    And I enter "Anytown" in city field
+    And I enter "California" in state field
+    And I enter "123456" in zip code field
+    And I enter "456789" in SSN field
+    And I click on find my login info button
+    Then I should been redirected to the get information page
+    And I log out
 
 

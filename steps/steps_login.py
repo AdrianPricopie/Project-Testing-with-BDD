@@ -45,9 +45,15 @@ def step_impl(context):
 
 @then('I should be redirected to the dashboard')
 def step_impl(context):
-    pass
+    actual_message = context.LoginPage.get_dashboard_page()
+    expected_result = 'Accounts Overview'
+    assert expected_result in actual_message
 
 
 @when('I leave username field empty')
 def step_impl(context):
     context.LoginPage.leave_username_field_empty()
+
+@then('I click on log out button')
+def step_impl(context):
+    context.LoginPage.log_out()

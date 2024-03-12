@@ -21,7 +21,7 @@ Feature: Register Feature
     And I introduce "sss" in zip code field
     And I introduce "1As" in phone field
     And I introduce ",.;" in SSN field
-    And I introduce "xyz" in username field
+    And I introduce "xyz000" in username field
     And I introduce "password" in password field
     And I introduce "password" in password confirmation filed
     And I click register button

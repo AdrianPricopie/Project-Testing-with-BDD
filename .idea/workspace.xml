@@ -5,12 +5,115 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4219af04-4fc2-4f40-b0eb-d40fc2ccd416" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/behave_report_12.03.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/behave_report_12.03_tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ProjectQA_BDD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProjectQA_BDD.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/browser.py" beforeDir="false" afterPath="$PROJECT_DIR$/browser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/environment.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/features/forgotpassword.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/forgotpassword.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/register.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/register_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/register_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/steps/steps_forgotpassword.py" beforeDir="false" afterPath="$PROJECT_DIR$/steps/steps_forgotpassword.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/steps/steps_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/steps/steps_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/steps/steps_register.py" beforeDir="false" afterPath="$PROJECT_DIR$/steps/steps_register.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/PySocks-1.7.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PySocks-1.7.1.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/attrs-23.2.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/attrs-23.2.0.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/behave-1.2.6.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/behave-1.2.6.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/behave_html_formatter-0.9.10.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/behave_html_formatter-0.9.10.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/certifi-2024.2.2.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/certifi-2024.2.2.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi-1.16.0.dist-info/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi-1.16.0.dist-info/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi-1.16.0.dist-info/METADATA" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi-1.16.0.dist-info/METADATA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi-1.16.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi-1.16.0.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/_cffi_errors.h" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/_cffi_errors.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/_cffi_include.h" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/_cffi_include.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/_embedding.h" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/_embedding.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/_imp_emulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/_imp_emulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/_shimmed_dist_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/_shimmed_dist_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/backend_ctypes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/backend_ctypes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/cffi_opcode.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/cffi_opcode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/commontypes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/commontypes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/cparser.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/cparser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/error.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/error.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/ffiplatform.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/ffiplatform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/lock.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/lock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/parse_c_type.h" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/parse_c_type.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/pkgconfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/pkgconfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/recompiler.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/recompiler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/setuptools_ext.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/setuptools_ext.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/vengine_cpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/vengine_cpy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/vengine_gen.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/vengine_gen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/verifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/verifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer-3.3.2.dist-info/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer-3.3.2.dist-info/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer-3.3.2.dist-info/METADATA" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer-3.3.2.dist-info/METADATA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer-3.3.2.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer-3.3.2.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer/cd.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer/cd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer/cli/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer/cli/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer/cli/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer/cli/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer/constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer/constant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer/legacy.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer/legacy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer/md.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer/md.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer/version.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/charset_normalizer/version.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/h11-0.14.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/h11-0.14.0.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/idna-3.6.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/idna-3.6.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/outcome-1.3.0.post0.dist-info/METADATA" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/outcome-1.3.0.post0.dist-info/METADATA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/outcome-1.3.0.post0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/outcome-1.3.0.post0.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/packaging-23.2.dist-info/INSTALLER" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/packaging-24.0.dist-info/INSTALLER" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/packaging-23.2.dist-info/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/packaging-24.0.dist-info/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/packaging-23.2.dist-info/LICENSE.APACHE" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/packaging-24.0.dist-info/LICENSE.APACHE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/packaging-23.2.dist-info/LICENSE.BSD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/packaging-24.0.dist-info/LICENSE.BSD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/packaging-23.2.dist-info/METADATA" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/packaging-24.0.dist-info/METADATA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/packaging-23.2.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/packaging-24.0.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/packaging-23.2.dist-info/WHEEL" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/packaging-24.0.dist-info/WHEEL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/packaging/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/packaging/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/packaging/_manylinux.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/packaging/_manylinux.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/packaging/_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/packaging/_parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/packaging/metadata.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/packaging/metadata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/packaging/requirements.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/packaging/requirements.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/packaging/specifiers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/packaging/specifiers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/packaging/tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/packaging/tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/parse-1.20.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/parse-1.20.1.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/parse_type-0.6.2.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/parse_type-0.6.2.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-23.2.1.dist-info/METADATA" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pip-23.2.1.dist-info/METADATA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-23.2.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pip-23.2.1.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pycparser-2.21.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pycparser-2.21.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/python_dotenv-1.0.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/python_dotenv-1.0.1.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/requests-2.31.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/requests-2.31.0.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/selenium-4.18.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/selenium-4.18.1.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/six-1.16.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/six-1.16.0.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sniffio-1.3.1.dist-info/METADATA" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sniffio-1.3.1.dist-info/METADATA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sniffio-1.3.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sniffio-1.3.1.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sortedcontainers-2.4.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sortedcontainers-2.4.0.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/trio-0.24.0.dist-info/METADATA" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/trio-0.24.0.dist-info/METADATA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/trio-0.24.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/trio-0.24.0.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/trio/_tests/type_tests/open_memory_channel.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/trio/_tests/type_tests/open_memory_channel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/trio_websocket-0.11.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/trio_websocket-0.11.1.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/typing_extensions-4.10.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/typing_extensions-4.10.0.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/urllib3-2.2.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/urllib3-2.2.1.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/webdriver_manager-4.0.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/webdriver_manager-4.0.1.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/wsproto-1.2.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wsproto-1.2.0.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/Activate.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/Activate.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/activate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate.bat" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/activate.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/behave.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/behave.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/deactivate.bat" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/deactivate.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/dotenv.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/dotenv.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/normalizer.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/normalizer.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/pip.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.12.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/pip3.12.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/pip3.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/python.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/python.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/pythonw.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/pythonw.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/pyvenv.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,15 +149,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Anetta",
-    "last_opened_file_path": "C:/Users/adi_d/PycharmProjects/ProjectQA_BDD/Project-Testing-with-BDD"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Anetta&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/adi_d/PycharmProjects/ProjectQA_BDD/Project-Testing-with-BDD&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

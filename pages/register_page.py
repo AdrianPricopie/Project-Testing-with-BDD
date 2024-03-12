@@ -1,3 +1,5 @@
+from selenium.common import NoSuchElementException
+
 from browser import Browser
 from Locators.RegisterLocators import RegisterLocators
 
@@ -22,6 +24,9 @@ class RegisterPage(Browser):
             error_messages.append(self.driver.find_element(*locator).text)
 
         return ",".join(error_messages)
+
+    def get_confirm_password_error(self):
+        return self.driver.find_element(*RegisterLocators.field_message_error['CONFIRM_PASSWORD_ERROR']).text
 
     def enter_first_name(self, firstname):
         self.driver.find_element(*RegisterLocators.fields_dict['FIRST_NAME']).send_keys(firstname)
@@ -64,3 +69,17 @@ class RegisterPage(Browser):
         for field, locator in RegisterLocators.fields_dict.items():
             # Lăsați câmpul gol
             self.driver.find_element(*locator).clear()
+
+    # def is_error_message_displayed(self):
+    #     # Verificăm dacă un mesaj de eroare este afișat pe pagină
+    #     error_messages = []
+    #     for locator in RegisterLocators.field_message_error.values():
+    #         try:
+    #             error_message = self.driver.find_element(*locator).text
+    #             if error_message:
+    #                 error_messages.append(error_message)
+    #         except NoSuchElementException:
+    #             pass  # Ignorăm excepțiile în cazul în care locatorul nu este găsit
+    #
+    #     # Verificăm dacă lista de mesaje de eroare nu este goală
+    #     return len(error_messages) > 0

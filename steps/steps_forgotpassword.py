@@ -21,11 +21,6 @@ def step_impl(context):
     assert expected_page_title in actual_page_title, f'{expected_page_title} is not in {actual_page_title}'
 
 
-@when('I leave empty all the fields')
-def step_impl(context):
-    pass
-
-
 @when('I click on find my login info button')
 def step_impl(context):
     context.ForgotPasswordPage.click_find_login_info_button()
@@ -85,11 +80,6 @@ def step_impl(context):
     actual_information = context.ForgotPasswordPage.get_information_page()
     expected_information = 'Your login information was located successfully. You are now logged in.'
     assert expected_information in actual_information, f'"{expected_information}" is not in "{actual_information}"'
-
-
-@then('the error message is not displayed')
-def step_impl(context):
-    pass
 
 
 @then('I log out')

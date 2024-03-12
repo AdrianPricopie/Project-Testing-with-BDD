@@ -24,10 +24,11 @@ Scenario Outline: Login with wrong credentials
 
   @correct_credentials
   Scenario: Login with correct credentials
-    When I enter "assq@123" in username field
-    And I enter "assq" in password field
+    When I enter "John Smith" in username field
+    And I enter "password" in password field
     And I press login button
     Then I should be redirected to the dashboard
+    And I click on log out button
 
   @empty_username_field
   Scenario: Login with empty username field

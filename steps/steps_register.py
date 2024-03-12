@@ -76,6 +76,8 @@ def step_impl(context, confpassw):
 
 @then('I should see an error message for wrong credentials')
 def step_impl(context):
+    # error_message_displayed = context.RegisterPage.is_error_message_displayed()
+    # assert error_message_displayed, "Expected error message to be displayed, but it's not."
     pass
 
 @then('I should be redirected to a welcome page')
@@ -85,4 +87,6 @@ def step_impl(context):
 
 @then('I should see an error message for unmatched passwords')
 def step_impl(context):
-    pass
+    actual_error_message = context.RegisterPage.get_confirm_password_error()
+    expected_error_message = 'Passwords did not match.'
+    assert expected_error_message in actual_error_message
