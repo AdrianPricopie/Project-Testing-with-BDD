@@ -31,6 +31,7 @@ class RegisterLocators:
         }
     WELCOME_MESSAGE_PAGE = (By.CSS_SELECTOR, '.title')
     REGISTER_BUTTON = (By.CSS_SELECTOR, 'input[value="Register"]')
+    LOG_OUT = (By.PARTIAL_LINK_TEXT, 'Log')
 
 
 

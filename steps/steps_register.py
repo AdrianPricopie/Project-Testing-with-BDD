@@ -1,5 +1,5 @@
 import time
-
+from faker import Faker
 from behave import *
 
 @given('I am on homepage')
@@ -66,6 +66,12 @@ def step_impl(context, ssn):
 def step_impl(context, username):
     context.RegisterPage.enter_username(username)
 
+@when('I introduce a new username in username field')
+def step_impl(context):
+    fake = Faker()
+    new_username = fake.user_name()
+    context.RegisterPage.enter_username(new_username)
+
 @when('I introduce "{passw}" in password field')
 def step_impl(context, passw):
     context.RegisterPage.enter_password(passw)
@@ -76,9 +82,9 @@ def step_impl(context, confpassw):
 
 @then('I should see an error message for wrong credentials')
 def step_impl(context):
-    # error_message_displayed = context.RegisterPage.is_error_message_displayed()
-    # assert error_message_displayed, "Expected error message to be displayed, but it's not."
-    pass
+    error_message_displayed = context.RegisterPage.is_error_message_displayed()
+    assert error_message_displayed, "Expected error message to be displayed, but it's not."
+    # pass
 
 @then('I should be redirected to a welcome page')
 def step_impl(context):
@@ -90,3 +96,7 @@ def step_impl(context):
     actual_error_message = context.RegisterPage.get_confirm_password_error()
     expected_error_message = 'Passwords did not match.'
     assert expected_error_message in actual_error_message
+
+# @then('I click on log out button')
+# def step_impl(context):
+#     context.RegisterPage.log_out_button()

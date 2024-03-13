@@ -70,16 +70,20 @@ class RegisterPage(Browser):
             # Lăsați câmpul gol
             self.driver.find_element(*locator).clear()
 
-    # def is_error_message_displayed(self):
-    #     # Verificăm dacă un mesaj de eroare este afișat pe pagină
-    #     error_messages = []
-    #     for locator in RegisterLocators.field_message_error.values():
-    #         try:
-    #             error_message = self.driver.find_element(*locator).text
-    #             if error_message:
-    #                 error_messages.append(error_message)
-    #         except NoSuchElementException:
-    #             pass  # Ignorăm excepțiile în cazul în care locatorul nu este găsit
-    #
-    #     # Verificăm dacă lista de mesaje de eroare nu este goală
-    #     return len(error_messages) > 0
+    def is_error_message_displayed(self):
+        # Verificăm dacă un mesaj de eroare este afișat pe pagină
+        error_messages = []
+        for locator in RegisterLocators.field_message_error.values():
+            try:
+                error_message = self.driver.find_element(*locator).text
+                if error_message:
+                    error_messages.append(error_message)
+            except NoSuchElementException:
+                pass  # Ignorăm excepțiile în cazul în care locatorul nu este găsit
+
+        # Verificăm dacă lista de mesaje de eroare nu este goală
+        return len(error_messages) > 0
+
+    # def log_out_button(self):
+    #     self.driver.find_element(*RegisterLocators.LOG_OUT).click()
+
