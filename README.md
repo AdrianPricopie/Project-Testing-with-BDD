@@ -15,6 +15,7 @@ This testing document is intended for the development team, testing team, and ot
 ## Table of Content:
 1. [Introduction](#introduction)
    - [Project Objective](#project-objective)
+   - [Tools and Version](#tools-and-version)
    - [Functionalities in Scope](#functionalities-in-scope)
    - [Functionalities and Tests Out of Scope](#functionalities-and-tests-out-of-scope)
 2. [Test Process](#test-process)
@@ -60,7 +61,17 @@ All materials herein are used solely for simulating a realistic online banking w
 - We need to raise the trust in the quality of the project as high as possible before releasing it to customers.
 - Application under test: [ParaBank](https://parabank.parasoft.com/parabank/index.htm).
 
-### 1.2 Functionalities in Scope
+### 1.2 Tools and Versions
+- **editor code used: pycharm**
+- **Library Versions:**
+    ```bash
+     behave==1.2.6
+     selenium===4.18.1
+     webdriver-manager==4.0.1
+     behave-html-formatter == 0.9.10
+    ```
+
+### 1.3 Functionalities in Scope
 - testing will primarily concentrate on the Chrome browser. 
 - To ensure the quality and functionality of the ParaBank platform, the following functionalities will be included in functional testing and graphical user interface (GUI) testing: Forgot password, login, customercare, register.
 - To ensure that new customers can successfully register and access the ParaBank services.
@@ -68,7 +79,7 @@ All materials herein are used solely for simulating a realistic online banking w
 - To ensure that if a customer forgot their password, they can recover using the "Forgot Password" functionality.
 - To ensure effective customer care functionality is in place, providing support and assistance to users as they interact with ParaBank services.
 
-### 1.3 Functionalities and Tests Out of Scope
+### 1.4 Functionalities and Tests Out of Scope
 
 - Non-functional testing like stress, performance is beyond the scope of this project.
 - No QA support for mobile applications developed. Only web applications will be tested.
