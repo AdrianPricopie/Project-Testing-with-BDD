@@ -977,3 +977,41 @@ faker: This library is used to generate fake data such as names and email addres
 behave: This is the primary BDD testing framework for Python.
 
 datetime: This module is used for working with dates and times. The datetime module is used in these steps for capturing the current date and time when saving a screenshot in case of a test failure. Specifically, it's used to generate a timestamp to include in the screenshot's file name.
+
+- **browser-file**: The following Browser class defines a simple wrapper around the Selenium WebDriver to manage the browser instance. It initializes a Chrome WebDriver instance, maximizes the window, and sets an implicit wait time of 3 seconds for finding elements before throwing an exception.
+```python
+from selenium import webdriver
+
+
+class Browser:
+    driver = webdriver.Chrome()
+    driver.maximize_window()
+    driver.implicitly_wait(3)
+
+    def close(self):
+        self.driver.close()
+```
+- **environment-file**: This environment.py file is used in conjunction with Behave, the BDD testing framework, to set up and tear down test environments before and after test execution. It imports necessary modules, initializes objects, and defines hooks to execute setup and teardown actions.
+```python
+from browser import Browser
+from pages.customercare_page import CustomerCarePage
+from pages.forgotpassword_page import ForgotPasswordPage
+from pages.login_page import LoginPage
+from pages.register_page import RegisterPage
+
+
+def before_all(context):
+    context.browser = Browser()
+    context.LoginPage = LoginPage()
+    context.CustomerCarePage = CustomerCarePage()
+    context.ForgotPasswordPage = ForgotPasswordPage()
+    context.RegisterPage = RegisterPage()
+
+
+def after_all(context):
+    context.browser.close()
+```
+- **venv**: The virtual environment directory.
+- **behave.ini**: Serves as a configuration file for Behave, the behavior-driven development (BDD) testing framework in Python. It allows to specify various settings and options for Behave, including options related to formatters, logging, and other behavior settings.
+- **requirements.txt**: Lists all the required dependencies for the project. Install these dependencies before running the tests.
+- **behave-script**: Parses the feature files, matches steps to their corresponding step definitions, and executes the tests. It provides detailed reports on the execution status of each scenario and step, helping to understand which tests passed, failed, or encountered issues.
