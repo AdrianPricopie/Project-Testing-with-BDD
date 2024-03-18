@@ -309,7 +309,7 @@ Feature: Register Feature
     Then I should see an error message for wrong credentials
 ```
 
-- - **locators**: Holds locator classes that store all the locators (CSS selectors, XPath ,etc.) used in the project. This separation ensures easy maintenance and updates if the locators change.
+- **locators**: Holds locator classes that store all the locators (CSS selectors, XPath ,etc.) used in the project. This separation ensures easy maintenance and updates if the locators change.
 ```python
 from selenium.webdriver.common.by import By
 
