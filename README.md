@@ -37,7 +37,7 @@ This testing document is intended for the development team, testing team, and ot
    - [Steps](#steps)
    - [Browser file](#browser-file)
    - [Environment file](#environment-file)
-   - [Venv, Behave.ini, Requirements.txt](#venv, #behave.ini, #requirements.txt)
+   - [Venv, Behave.ini, Requirements.txt](#venv, behave.ini, requirements.txt)
    - [Behave Script](#behave-script)
 
    
