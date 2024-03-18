@@ -103,7 +103,7 @@ All materials herein are used solely for simulating a realistic online banking w
 - Stress conditions might impact the web application
 - New browser might not be supported
 
-## Test Analysis:
+## 2.2 Test Analysis:
 
 - Analyze the business requirements to ensure all details for creating test conditions are available.
 - Identify the functional requirements for each functionality, including what data can be modified, what data can be deleted, and what new customer data can be added.
