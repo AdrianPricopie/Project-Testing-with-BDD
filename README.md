@@ -40,8 +40,21 @@ This testing document is intended for the development team, testing team, and ot
    - [Environment file](#environment-file)
    - [Venv, Behave.ini, Requirements.txt](#venv-behave.ini-requirements.txt)
    - [Behave Script](#behave-script)
+  
+4. [Features Under Testing](#features-under-testing)
+    - [Customer Care Functionality Testing](#customer-care-functionality-testing)
+    - [Forgot Password Functionality Testing](#forgot-password-functionality-testing)
+    - [Login Functionality Testing](#login-functionality-testing)
+    - [Register Functionality Testing](#register-functionality-testing)
 
-5. [Test Deliverables](#test-deliverables)
+5. [Getting Started](#getting-started)
+    - [Clone the Repository](#clone-the-repository)
+    - [Install Dependencies](#install-dependencies)
+    - [Activate the Virtual Environment](#activate-the-virtual-environment)
+    - [Run the tests](#run-the-tests)
+6. [Conclusion](#conclusion)
+
+7. [Test Deliverables](#test-deliverables)
    - [Test Conditions](#test-conditions)
    - [Test Cases](#test-cases)
    - [Daily Test Summary Reports](#daily-test-summary-reports)
@@ -1015,3 +1028,50 @@ def after_all(context):
 - **behave.ini**: Serves as a configuration file for Behave, the behavior-driven development (BDD) testing framework in Python. It allows to specify various settings and options for Behave, including options related to formatters, logging, and other behavior settings.
 - **requirements.txt**: Lists all the required dependencies for the project. Install these dependencies before running the tests.
 - **behave-script**: Parses the feature files, matches steps to their corresponding step definitions, and executes the tests. It provides detailed reports on the execution status of each scenario and step, helping to understand which tests passed, failed, or encountered issues.
+
+# 4. Features Under Testing:
+ ### Customer Care Functionality Testing:
+1. Email support with empty fields
+2. Email support with wrong email format
+3. Email support with wrong phone format
+4. Email support with correct credentials
+   
+### Forgot Password Functionality Testing:
+1. Reset password with empty fields
+2. Reset password with wrong credentials
+3. Reset password with correct credentials
+
+### Login Functionality Testing:
+1. Login with wrong credentials
+2. Login with both empty username and password
+3. Login with correct credentials
+4. Login with empty username field
+
+### Register Functionality Testing:
+1. Register with empty fields
+2. Register with different password confirmation
+3. Register with correct credentials
+4. Register with wrong credentials
+
+## Getting Started  :pushpin:
+
+1. **Clone the Repository:**
+
+    ```bash
+    git clone https://github.com/AdrianPricopie/Project-Testing-with-BDD.git
+    ```
+
+2. **Install Dependencies:**
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. **Activate the Virtual Environment:**
+
+    ```bash
+    venv/Scripts/Activate
+    ```
+
+4. **Run the tests:**
+
