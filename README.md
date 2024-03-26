@@ -878,4 +878,6 @@ Steps to reproduce:
 
 Expected result: I should see an error message for the email field.
 
+[Bug](https://github.com/AdrianPricopie/Project-Testing-with-BDD/blob/main/Screenshots/Element_error_message_email_Failure_26-03-2024.png)
+
 Actual result: The form submits successfully without any validation error for the email field, even though the email format is incorrect. No error message is displayed.
