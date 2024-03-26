@@ -1,8 +1,8 @@
-# ParaBank Project Testing automation with python BDD selenium framework
+# ParaBank Project Testing automation with python BDD selenium framework  :books:
 
 This testing document is intended for the development team, testing team, and other stakeholders involved in the ParaBank Banking project. Additionally, it aims to provide a clear understanding of the testing process for all those interested in the quality and performance of the application.
 
-## Table of Content:
+## Table of Content:  :rocket:
 1. [Introduction](#introduction)
 2. [Test Process](#test-process)
 3. [Project Structure](#project-structure)
@@ -794,7 +794,7 @@ def after_all(context):
 - **requirements.txt**: Lists all the required dependencies for the project. Install these dependencies before running the tests.
 - **behave-script**: Parses the feature files, matches steps to their corresponding step definitions, and executes the tests. It provides detailed reports on the execution status of each scenario and step, helping to understand which tests passed, failed, or encountered issues.
 
-# 4. Features Under Testing:
+# 4. Features Under Testing:  :rocket:
  ### Customer Care Functionality Testing:
 1. Email support with empty fields
 2. Email support with wrong email format
