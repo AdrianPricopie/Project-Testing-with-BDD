@@ -8,7 +8,7 @@ This testing document is intended for the development team, testing team, and ot
 3. [Project Structure](#3-project-structure)
 4. [Features Under Testing](#4-features-under-testing--rocket)
 5. [Getting Started](#getting-started--pushpin)
-6. [Reports](#getting-started--pushpin)
+6. [Reports](#reports)
 
 ## Revision History:
 
