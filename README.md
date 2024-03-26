@@ -1064,3 +1064,8 @@ Below, you can find the reports for all tests conducted on 26.03.2024:
 
 ![Report 3](https://github.com/AdrianPricopie/Project-Testing-with-BDD/blob/main/Screenshot%202024-03-26%20at%2020.56.25.png)
 
+Out of 17 tests conducted, 4 have failed.
+
+## Bug reports
+
+
