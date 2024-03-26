@@ -150,7 +150,7 @@ Behavior-driven development (or BDD) is an agile software development
 technique that encourages collaboration between developers, QA and
 non-technical or business participants in a software project.
 
-*behave* uses tests written in a natural language style, backed up by Python
+[*behave*](https://behave.readthedocs.io/en/latest/#) uses tests written in a natural language style, backed up by Python
 code.
 
 - **features**: Hold the specifications or scenarios written in Gherkin syntax. Gherkin is a human-readable format that describes the behavior of the software in plain language. Each feature file typically represents a feature or a user story of the application being developed, and it contains one or more scenarios that describe the various behaviors or functionalities of that feature.
