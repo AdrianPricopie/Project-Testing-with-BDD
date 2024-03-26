@@ -2,13 +2,6 @@
 
 This testing document is intended for the development team, testing team, and other stakeholders involved in the ParaBank Banking project. Additionally, it aims to provide a clear understanding of the testing process for all those interested in the quality and performance of the application.
 
-## Revision History:
-
-| Date       | Description                   | Author            | Comments          |
-| ---------- | ----------------------------- | ------------------ | ------------------ |
-| 26.02.2024 | Test Plan for version 1.0     | Pricopie Adrian   | Draft test plan    |
-| 1.03.2024 | v1.1                          | Robert Furtuna    | Added more details for Test Process |
-
 ## Table of Content:
 1. [Introduction](#introduction)
    - [Project Objective](#project-objective)
@@ -60,6 +53,14 @@ This testing document is intended for the development team, testing team, and ot
    - [Bugs Report](#bugs-report)
    - [Test Completion Report](#test-completion-report)
    - [Schedule](#schedule)
+
+
+## Revision History:
+
+| Date       | Description                   | Author            | Comments          |
+| ---------- | ----------------------------- | ------------------ | ------------------ |
+| 26.02.2024 | Test Plan for version 1.0     | Pricopie Adrian   | Draft test plan    |
+| 1.03.2024 | v1.1                          | Robert Furtuna    | Added more details for Test Process |
 
 ## Introduction:
 - ParaBank is a demo site used for demonstration of Parasoft software solutions.
