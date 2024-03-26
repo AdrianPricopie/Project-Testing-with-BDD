@@ -4,12 +4,11 @@ This testing document is intended for the development team, testing team, and ot
 
 ## Table of Content:  :rocket:
 1. [Introduction](#introduction)
-2. [Test Process](#test-process)
-3. [Project Structure](#project-structure)
-4. [Features Under Testing](#features-under-testing)
-5. [Getting Started](#getting-started)
-6. [Conclusion](#conclusion)
-7. [Test Deliverables](#test-deliverables)
+2. [Test Process](#2-test-process)
+3. [Project Structure](#3-project-structure)
+4. [Features Under Testing](#4-features-under-testing--rocket)
+5. [Getting Started](#getting-started--pushpin)
+6. [Reports](#getting-started--pushpin)
 
 ## Revision History:
 
