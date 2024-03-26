@@ -1055,11 +1055,12 @@ def after_all(context):
     behave --format html -o behave_report_tags.html --tags=register_wrong_credential
     ```
 
-## Reports 
+## Reports
+Below, you can find the reports for all tests conducted on 26.03.2024:
 
-![](https://github.com/AdrianPricopie/Project-Testing-with-BDD/blob/main/Screenshot%202024-03-26%20at%2020.55.33.png)
-![](https://github.com/AdrianPricopie/Project-Testing-with-BDD/blob/main/Screenshot%202024-03-26%20at%2020.55.55.png)
-![](https://github.com/AdrianPricopie/Project-Testing-with-BDD/blob/main/Screenshot%202024-03-26%20at%2020.56.25.png)
+![Report 1](https://github.com/AdrianPricopie/Project-Testing-with-BDD/blob/main/Screenshot%202024-03-26%20at%2020.55.33.png)
 
-   
-   
+![Report 2](https://github.com/AdrianPricopie/Project-Testing-with-BDD/blob/main/Screenshot%202024-03-26%20at%2020.55.55.png)
+
+![Report 3](https://github.com/AdrianPricopie/Project-Testing-with-BDD/blob/main/Screenshot%202024-03-26%20at%2020.56.25.png)
+
