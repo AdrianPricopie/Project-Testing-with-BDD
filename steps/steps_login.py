@@ -7,7 +7,6 @@ def step_impl(context):
     context.LoginPage.navigate_to_login_page()
 
 
-
 @when('I enter "{username}" in username field')
 def step_impl(context, username):
     context.LoginPage.enter_username(username)
@@ -48,7 +47,7 @@ def step_impl(context):
     expected_result = 'Accounts Overview'
     if expected_result not in actual_message:
         # Capture and save screenshot in case of failure
-        screenshot_name = 'C:/Users/adi_d/PycharmProjects/ProjectQA_BDD/Project-Testing-with-BDD/Screenshots/' + 'Dashboard_Redirection_Failure' + '_' + datetime.now().strftime(
+        screenshot_name = '/Users/adrianpricopie/PythonBDD/Project-Testing-with-BDD/Screenshots/' + 'error_dashboard_page' + '_' + datetime.now().strftime(
             '%d-%m-%Y') + '.png'
 
         context.browser.driver.save_screenshot(screenshot_name)
@@ -56,6 +55,8 @@ def step_impl(context):
         # Raise AssertionError with custom message
         raise AssertionError(f'Test failed. Screenshot saved at: {screenshot_name}')
 
+    # clean UP (Log out)
+    context.LoginPage.log_out()
 
 @when('I leave username field empty')
 def step_impl(context):

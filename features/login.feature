@@ -24,8 +24,8 @@ Scenario Outline: Login with wrong credentials
 
   @login_correct_credentials
   Scenario: Login with correct credentials
-    When I enter "robert2" in username field
-    And I enter "robert2" in password field
+    When I enter "bogdan" in username field
+    And I enter "123" in password field
     And I press login button
     Then I should be redirected to the dashboard
 
