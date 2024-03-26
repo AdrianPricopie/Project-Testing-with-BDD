@@ -657,7 +657,6 @@ from behave import *
 @given('I am on homepage')
 def step_impl(context):
     context.RegisterPage.home_page()
-    time.sleep(2)
 
 @given('I click on register button')
 def step_impl(context):
