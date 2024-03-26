@@ -154,7 +154,7 @@ non-technical or business participants in a software project.
 code.
 
 - **features**: Hold the specifications or scenarios written in Gherkin syntax. Gherkin is a human-readable format that describes the behavior of the software in plain language. Each feature file typically represents a feature or a user story of the application being developed, and it contains one or more scenarios that describe the various behaviors or functionalities of that feature.
-```python
+```gherkin
 Feature: CustomerCare Feature
 
   Background:
@@ -195,7 +195,7 @@ Feature: CustomerCare Feature
     And I press the send button
     Then I should see a Thank you message
 ```
-```python
+```gherkin
 Feature: ForgotPassword Feature
 
   Background:
@@ -233,7 +233,7 @@ Feature: ForgotPassword Feature
     Then I should been redirected to the get information page
     And I log out
 ```
-```python
+```gherkin
 Feature: Login Feature
 
   Background:
@@ -273,7 +273,7 @@ Scenario Outline: Login with wrong credentials
     Then I should see an error message
 
 ```
-```python
+```gherkin
 Feature: Register Feature
 
   Background:
