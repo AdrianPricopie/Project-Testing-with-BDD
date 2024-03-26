@@ -865,5 +865,17 @@ Below, you can find the reports for all tests conducted on 26.03.2024:
 Out of 17 tests conducted, 4 have failed.
 
 ## Bug reports
+1. Contact Form - Incorrect Email Format Validation
 
+Precondition: Given I am on the login page
 
+Steps to reproduce:
+1. I enter "Robert" in the name field.
+2. I enter "abc" in the email field.
+3. I enter "123" in the phone field.
+4. I enter "need support message" in the message field.
+5. I press the send button.
+
+Expected result: I should see an error message for the email field.
+
+Actual result: The form submits successfully without any validation error for the email field, even though the email format is incorrect. No error message is displayed.
