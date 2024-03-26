@@ -1044,4 +1044,14 @@ def after_all(context):
     ```
 
 4. **Run the tests:**
-
+    ```bash
+    behave -f html -o report.html  
+    ```
+5. **Run test by hastag:**
+   example:
+     ```bash
+    behave --format html -o behave_report_tags.html --tags=register_wrong_credential  
+    ```
+   
+   
+   
