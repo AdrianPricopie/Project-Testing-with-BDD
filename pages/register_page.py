@@ -6,7 +6,7 @@ from Locators.RegisterLocators import RegisterLocators
 
 class RegisterPage(Browser):
 
-    def home_page(self):
+    def navigate_to_home_page(self):
         self.driver.get('https://parabank.parasoft.com/parabank/index.htm')
 
     def click_on_register_link_button(self):
@@ -17,6 +17,9 @@ class RegisterPage(Browser):
 
     def click_register_button(self):
         self.driver.find_element(*RegisterLocators.REGISTER_BUTTON).click()
+
+    def click_log_out(self):
+        self.driver.find_element(*RegisterLocators.LOG_OUT).click()
 
     def get_error_messages(self):
         error_messages = []
@@ -83,7 +86,3 @@ class RegisterPage(Browser):
 
         # Verificăm dacă lista de mesaje de eroare nu este goală
         return len(error_messages) > 0
-
-    # def log_out_button(self):
-    #     self.driver.find_element(*RegisterLocators.LOG_OUT).click()
-

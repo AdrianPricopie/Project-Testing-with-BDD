@@ -9,6 +9,7 @@ class ForgotPasswordPage(Browser):
 
     def navigate_to_homepage(self):
         self.driver.get('https://parabank.parasoft.com/parabank/index.htm')
+        time.sleep(2)
 
     def click_forgot_password_button(self):
         self.driver.find_element(*ForgotPasswordLocators.FORGOT_LOGIN_BUTTON).click()
@@ -62,3 +63,4 @@ class ForgotPasswordPage(Browser):
     def log_out(self):
         self.driver.find_element(*ForgotPasswordLocators.LOG_OUT).click()
         time.sleep(2)
+

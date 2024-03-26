@@ -1,12 +1,9 @@
-import time
-
 from behave import *
 
 
 @given('I am on the homepage')
 def step_impl(context):
     context.ForgotPasswordPage.navigate_to_homepage()
-    time.sleep(2)
 
 
 @given('I click o the forgot password button')

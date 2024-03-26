@@ -1,5 +1,3 @@
-import time
-
 from browser import Browser
 from pages.customercare_page import CustomerCarePage
 from pages.forgotpassword_page import ForgotPasswordPage

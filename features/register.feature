@@ -11,14 +11,13 @@ Feature: Register Feature
     And I click register button
     Then I should see an error message for empty fields
 
-
   @register_with_no_matched_passwords
   Scenario: Register with different password confirmation
     When I introduce "123" in password field
     And I introduce "321" in password confirmation filed
     And I click register button
     Then I should see an error message for unmatched passwords
-
+#
   @register_correct_credentials
   Scenario: Register with correct credentials
     When I introduce "John" in first name field
@@ -35,7 +34,7 @@ Feature: Register Feature
     And I click register button
     Then I should be redirected to a welcome page
 
-   @register_wrong_credentials
+@register_wrong_credentials
   Scenario: Register with wrong credentials
     When I introduce "092" in first name field
     And I introduce "09d" in last name field
@@ -50,8 +49,6 @@ Feature: Register Feature
     And I introduce "password" in password confirmation filed
     And I click register button
     Then I should see an error message for wrong credentials
-#    And I click on log out button
-
 
 
 

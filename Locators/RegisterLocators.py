@@ -18,21 +18,17 @@ class RegisterLocators:
         'CONFIRM_PASSWORD': (By.CSS_SELECTOR, '#repeatedPassword'),
     }
     field_message_error = {
-            'FNAME_ERROR': (By.CSS_SELECTOR, 'span[id="customer.firstName.errors"]'),
-            'LNAME_ERROR': (By.CSS_SELECTOR, 'span[id="customer.lastName.errors"]'),
-            'ADDRESS_ERROR': (By.CSS_SELECTOR, 'span[id="customer.address.street.errors"]'),
-            'CITY_ERROR': (By.CSS_SELECTOR, 'span[id="customer.address.city.errors"]'),
-            'STATE_ERROR': (By.CSS_SELECTOR, 'span[id="customer.address.state.errors"]'),
-            'ZIPCODE_ERROR': (By.CSS_SELECTOR, 'span[id="customer.address.zipCode.errors"]'),
-            'SSN_ERROR': (By.CSS_SELECTOR, 'span[id="customer.ssn.errors"]'),
-            'USERNAME_ERROR': (By.CSS_SELECTOR, 'span[id="customer.username.errors"]'),
-            'PASSWORD_ERROR': (By.CSS_SELECTOR, 'span[id="customer.password.errors"]'),
-            'CONFIRM_PASSWORD_ERROR': (By.CSS_SELECTOR, 'span[id="repeatedPassword.errors"]'),
-        }
+        'FNAME_ERROR': (By.CSS_SELECTOR, 'span[id="customer.firstName.errors"]'),
+        'LNAME_ERROR': (By.CSS_SELECTOR, 'span[id="customer.lastName.errors"]'),
+        'ADDRESS_ERROR': (By.CSS_SELECTOR, 'span[id="customer.address.street.errors"]'),
+        'CITY_ERROR': (By.CSS_SELECTOR, 'span[id="customer.address.city.errors"]'),
+        'STATE_ERROR': (By.CSS_SELECTOR, 'span[id="customer.address.state.errors"]'),
+        'ZIPCODE_ERROR': (By.CSS_SELECTOR, 'span[id="customer.address.zipCode.errors"]'),
+        'SSN_ERROR': (By.CSS_SELECTOR, 'span[id="customer.ssn.errors"]'),
+        'USERNAME_ERROR': (By.CSS_SELECTOR, 'span[id="customer.username.errors"]'),
+        'PASSWORD_ERROR': (By.CSS_SELECTOR, 'span[id="customer.password.errors"]'),
+        'CONFIRM_PASSWORD_ERROR': (By.CSS_SELECTOR, 'span[id="repeatedPassword.errors"]'),
+    }
     WELCOME_MESSAGE_PAGE = (By.CSS_SELECTOR, '.title')
     REGISTER_BUTTON = (By.CSS_SELECTOR, 'input[value="Register"]')
     LOG_OUT = (By.PARTIAL_LINK_TEXT, 'Log')
-
-
-
-

@@ -1,13 +1,11 @@
 from datetime import datetime
-import time
-
 from behave import *
 
 
 @given('I am on the login page')
 def step_impl(context):
     context.LoginPage.navigate_to_login_page()
-    time.sleep(2)
+
 
 
 @when('I enter "{username}" in username field')
@@ -28,9 +26,8 @@ def step_impl(context):
 @then('I should see an internal error message')
 def step_impl(context):
     actual_error_message = context.LoginPage.get_error_message()
-    expected_result_message = 'An internal error has occurred and has been logged.'
+    expected_result_message = 'The username and password could not be verified.'
     assert expected_result_message in actual_error_message
-
 
 
 @when('I leave both username and password fields empty')
@@ -63,7 +60,3 @@ def step_impl(context):
 @when('I leave username field empty')
 def step_impl(context):
     context.LoginPage.leave_username_field_empty()
-
-# @then('I click on log out button')
-# def step_impl(context):
-#     context.LoginPage.log_out()

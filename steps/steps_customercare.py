@@ -5,13 +5,13 @@ from behave import *
 
 @given('I am on the contact page')
 def step_impl(context):
+    time.sleep(3)
     context.CustomerCarePage.navigate_to_contact_page()
-    time.sleep(2)
 
 
 @when('I leave name,email,phone,message fields empty')
 def step_impl(context):
-    pass
+    context.CustomerCarePage.leave_name_email_phone_message_fields_empty()
 
 
 @when('I press the send button')
@@ -50,14 +50,16 @@ def step_impl(context, message):
 def step_impl(context):
     actual_error_message = context.CustomerCarePage.get_error_message_email_field()
     expected_error_message = 'Email format is not correct'
-    assert expected_error_message in actual_error_message
+    assert expected_error_message in actual_error_message, (f"Expected error message: '{expected_error_message}', "
+                                                            f"but got: '{actual_error_message}'")
 
 
 @then('I should see an error message for the phone field')
 def step_impl(context):
     actual_error_message = context.CustomerCarePage.get_error_message_phone_field()
     expected_error_message = 'Phone format is not correct'
-    assert expected_error_message in actual_error_message
+    assert expected_error_message in actual_error_message, (f"Expected error message: '{expected_error_message}', "
+                                                            f"but got: '{actual_error_message}'")
 
 
 @then('I should see a Thank you message')
