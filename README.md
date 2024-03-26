@@ -147,6 +147,11 @@ All materials herein are used solely for simulating a realistic online banking w
 
 This project follows the Behavior-Driven Development (BDD) design pattern, enhancing modularity and maintainability The pages directory encapsulates classes representing specific pages on the ParaBank website, each handling interactions and elements unique to that page.
 
+Cucumber was built to support [Behaviour-Driven Development (BDD).](https://cucumber.io/docs/bdd/)
+
+Cucumber is a tool for running automated acceptance tests, written in plain language. Because they're written in plain language, they can be read by anyone on your team. Because they can be read by anyone, they help improve communication, collaboration and trust on your team
+
+
 - **features**: Hold the specifications or scenarios written in Gherkin syntax. Gherkin is a human-readable format that describes the behavior of the software in plain language. Each feature file typically represents a feature or a user story of the application being developed, and it contains one or more scenarios that describe the various behaviors or functionalities of that feature.
 ```python
 Feature: CustomerCare Feature
