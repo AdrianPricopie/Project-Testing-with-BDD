@@ -1,6 +1,6 @@
 # ParaBank Project Testing automation with python BDD selenium framework  :books:
 
-This testing document is intended for the development team, testing team, and other stakeholders involved in the ParaBank Banking project. Additionally, it aims to provide a clear understanding of the testing process for all those interested in the quality and performance of the application.
+This project is dedicated to automated testing of the ParaBank application using a Behavior-Driven Development (BDD) framework and Selenium in the Python programming language. The project was created following the accumulation of knowledge from the automated testing course and aims to demonstrate practical skills in automated testing of web applications.
 
 ## Table of Content:  :rocket:
 1. [Introduction](#introduction)
