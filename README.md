@@ -864,7 +864,7 @@ Below, you can find the reports for all tests conducted on 26.03.2024:
 
 Out of 17 tests conducted, 4 have failed.
 
-## Bug reports
+## Bugs reports
 1. Contact Form - Incorrect Email Format Validation
 
 Precondition: Given I am on the login page
