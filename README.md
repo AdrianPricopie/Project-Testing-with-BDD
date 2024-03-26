@@ -149,6 +149,8 @@ This project follows the Behavior-Driven Development (BDD) design pattern, enhan
 
 Cucumber was built to support [Behaviour-Driven Development (BDD).](https://cucumber.io/docs/bdd/)
 
+<p align="left"> <a href="https://cucumber.io/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/cucumber/cucumber-ruby/main/docs/img/cucumber-open-logo.png" alt="Cucumber" width="620" height="120"/> </a> 
+
 Cucumber is a tool for running automated acceptance tests, written in plain language. Because they're written in plain language, they can be read by anyone on your team. Because they can be read by anyone, they help improve communication, collaboration and trust on your team
 
 
