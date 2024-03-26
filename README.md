@@ -634,13 +634,17 @@ def step_impl(context):
     expected_result = 'Accounts Overview'
     if expected_result not in actual_message:
         # Capture and save screenshot in case of failure
-        screenshot_name = 'C:/Users/Robert/PycharmProjects/Project-Testing-with-BDD/Screenshots/' + 'Dashboard_Redirection_Failure2' + '_' + datetime.now().strftime(
+        screenshot_name = '/Users/adrianpricopie/PythonBDD/Project-Testing-with-BDD/Screenshots/' + 'error_dashboard_page' + '_' + datetime.now().strftime(
             '%d-%m-%Y') + '.png'
 
         context.browser.driver.save_screenshot(screenshot_name)
 
         # Raise AssertionError with custom message
         raise AssertionError(f'Test failed. Screenshot saved at: {screenshot_name}')
+
+    # clean UP (Log out)
+    context.LoginPage.log_out()
+
 
 
 @when('I leave username field empty')
@@ -766,7 +770,7 @@ class Browser:
     driver.implicitly_wait(3)
 
     def close(self):
-        self.driver.close()
+        self.driver.quit()
 ```
 - **environment-file**: This environment.py file is used in conjunction with Behave, the BDD testing framework, to set up and tear down test environments before and after test execution. It imports necessary modules, initializes objects, and defines hooks to execute setup and teardown actions.
 ```python
