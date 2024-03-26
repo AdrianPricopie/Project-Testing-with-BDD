@@ -75,6 +75,7 @@ All materials herein are used solely for simulating a realistic online banking w
 
 ### 1.2 Tools and Versions
 - **editor code used: pycharm**
+- **Language: Python**  
 - **Library Versions:**
     ```bash
      behave==1.2.6
@@ -151,7 +152,7 @@ Cucumber was built to support [Behaviour-Driven Development (BDD).](https://cucu
 
 <p align="left"> <a href="https://cucumber.io/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/cucumber/cucumber-ruby/main/docs/img/cucumber-open-logo.png" alt="Cucumber" width="620" height="120"/> </a> 
 
-Cucumber is a tool for running automated acceptance tests, written in plain language. Because they're written in plain language, they can be read by anyone on your team. Because they can be read by anyone, they help improve communication, collaboration and trust on your team
+**Cucumber** is a tool for running automated acceptance tests, written in plain language. Because they're written in plain language, they can be read by anyone on your team. Because they can be read by anyone, they help improve communication, collaboration and trust on your team
 
 
 - **features**: Hold the specifications or scenarios written in Gherkin syntax. Gherkin is a human-readable format that describes the behavior of the software in plain language. Each feature file typically represents a feature or a user story of the application being developed, and it contains one or more scenarios that describe the various behaviors or functionalities of that feature.
@@ -528,119 +529,8 @@ class CustomerCarePage(Browser):
         self.driver.find_element(*CustomercareLocators.PHONE_FIELD).clear()
 
 ```
-```python
-import time
-
-from Locators.ForgotPasswordLocators import ForgotPasswordLocators
-
-from browser import Browser
 
 
-class ForgotPasswordPage(Browser):
-
-    def navigate_to_homepage(self):
-        self.driver.get('https://parabank.parasoft.com/parabank/index.htm')
-
-    def click_forgot_password_button(self):
-        self.driver.find_element(*ForgotPasswordLocators.FORGOT_LOGIN_BUTTON).click()
-
-    def get_password_reset_page(self):
-        return self.driver.find_element(*ForgotPasswordLocators.VALIDATE_ACCOUNT_PAGE).text
-
-    def click_find_login_info_button(self):
-        self.driver.find_element(*ForgotPasswordLocators.FIND_LOGIN_INFO_BUTTON).click()
-
-    def get_error_message_empty_fields(self):
-        firstname_error = self.driver.find_element(*ForgotPasswordLocators.FNAME_ERROR).text
-        lastname_error = self.driver.find_element(*ForgotPasswordLocators.LNAME_ERROR).text
-        address_error = self.driver.find_element(*ForgotPasswordLocators.ADDRESS_ERROR).text
-        city_error = self.driver.find_element(*ForgotPasswordLocators.CITY_ERROR).text
-        state_error = self.driver.find_element(*ForgotPasswordLocators.STATE_ERROR).text
-        zipcode_error = self.driver.find_element(*ForgotPasswordLocators.ZIPCODE_ERROR).text
-        ssn_error = self.driver.find_element(*ForgotPasswordLocators.SSN_ERROR).text
-
-        error_messages = f'{firstname_error},{lastname_error},{address_error},{city_error},{state_error},{zipcode_error},{ssn_error}'
-
-        return error_messages
-
-    def enter_firstname(self, firstname):
-        self.driver.find_element(*ForgotPasswordLocators.FIRST_NAME_FIELD).send_keys(firstname)
-
-    def enter_lastname(self, lastname):
-        self.driver.find_element(*ForgotPasswordLocators.LAST_NAME_FIELD).send_keys(lastname)
-
-    def enter_address(self, address):
-        self.driver.find_element(*ForgotPasswordLocators.ADDRESS_FIELD).send_keys(address)
-
-    def enter_city(self, city):
-        self.driver.find_element(*ForgotPasswordLocators.CITY_FIELD).send_keys(city)
-
-    def enter_state(self, state):
-        self.driver.find_element(*ForgotPasswordLocators.STATE_FIELD).send_keys(state)
-
-    def enter_zipcode(self, zipcode):
-        self.driver.find_element(*ForgotPasswordLocators.ZIP_CODE_FIELD).send_keys(zipcode)
-
-    def enter_ssn(self, ssn):
-        self.driver.find_element(*ForgotPasswordLocators.SSN_FILED).send_keys(ssn)
-
-    def get_error_message_wrong_credentials(self):
-        return self.driver.find_element(*ForgotPasswordLocators.ERROR_MESSAGE).text
-
-    def get_information_page(self):
-        return self.driver.find_element(*ForgotPasswordLocators.GET_INFORMATION_PAGE).text
-
-    def log_out(self):
-        self.driver.find_element(*ForgotPasswordLocators.LOG_OUT).click()
-        time.sleep(2)
-
-```
-```python
-import time
-
-from selenium.webdriver.common.by import By
-
-from browser import Browser
-
-
-class LoginPage(Browser):
-    USERNAME_FIELD_SELECTOR = (By.CSS_SELECTOR, 'input[type="text"]')
-    PASSWORD_FIELD_SELECTOR = (By.CSS_SELECTOR, 'input[type="password"]')
-    LOGIN_BUTTON_SELECTOR = (By.CSS_SELECTOR, 'input[type="submit"]')
-    TITLE_ERROR_LOGIN_SELECTOR = (By.CSS_SELECTOR, '.error')
-    LOGIN_DASHBOARD = (By.CSS_SELECTOR, 'h1.title')
-    LOG_OUT_BUTTON = (By.PARTIAL_LINK_TEXT, 'Log')
-
-    def navigate_to_login_page(self):
-        self.driver.get('https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC')
-
-    def enter_username(self, username):
-        self.driver.find_element(*self.USERNAME_FIELD_SELECTOR).send_keys(username)
-
-    def enter_password(self, password):
-        self.driver.find_element(*self.PASSWORD_FIELD_SELECTOR).send_keys(password)
-
-    def click_login_button(self):
-        self.driver.find_element(*self.LOGIN_BUTTON_SELECTOR).click()
-
-    def get_error_message(self):
-        return self.driver.find_element(*self.TITLE_ERROR_LOGIN_SELECTOR).text
-
-    def leave_both_username_password_field(self):
-        self.driver.find_element(*self.USERNAME_FIELD_SELECTOR).clear()
-        self.driver.find_element(*self.PASSWORD_FIELD_SELECTOR).click()
-
-    def leave_username_field_empty(self):
-        self.driver.find_element(*self.USERNAME_FIELD_SELECTOR).clear()
-
-    def get_dashboard_page(self):
-        return self.driver.find_element(*self.LOGIN_DASHBOARD).text
-
-    def log_out(self):
-        self.driver.find_element(*self.LOG_OUT_BUTTON).click()
-        time.sleep(2)
-
-```
 ```python
 from selenium.common import NoSuchElementException
 
@@ -650,7 +540,7 @@ from Locators.RegisterLocators import RegisterLocators
 
 class RegisterPage(Browser):
 
-    def home_page(self):
+    def navigate_to_home_page(self):
         self.driver.get('https://parabank.parasoft.com/parabank/index.htm')
 
     def click_on_register_link_button(self):
@@ -661,6 +551,9 @@ class RegisterPage(Browser):
 
     def click_register_button(self):
         self.driver.find_element(*RegisterLocators.REGISTER_BUTTON).click()
+
+    def click_log_out(self):
+        self.driver.find_element(*RegisterLocators.LOG_OUT).click()
 
     def get_error_messages(self):
         error_messages = []
@@ -727,6 +620,7 @@ class RegisterPage(Browser):
 
         # Verificăm dacă lista de mesaje de eroare nu este goală
         return len(error_messages) > 0
+
 ```
 - **screenshots**: Automatically captured screenshots for failed test cases. These images are helpful for identifying and debugging issues.
 
@@ -738,11 +632,9 @@ import time
 
 from behave import *
 
-
 @given('I am on the contact page')
 def step_impl(context):
     context.CustomerCarePage.navigate_to_contact_page()
-    time.sleep(2)
 
 
 @when('I leave name,email,phone,message fields empty')
