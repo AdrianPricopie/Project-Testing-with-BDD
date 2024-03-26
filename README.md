@@ -1,7 +1,5 @@
 # ParaBank Project Testing automation with python BDD selenium framework
 
-
-
 ## Test plan
 This testing document is intended for the development team, testing team, and other stakeholders involved in the ParaBank Banking project. Additionally, it aims to provide a clear understanding of the testing process for all those interested in the quality and performance of the application.
 
@@ -75,7 +73,7 @@ All materials herein are used solely for simulating a realistic online banking w
 
 ### 1.2 Tools and Versions
 - **editor code used: pycharm**
-- **Language: Python**  
+- **Language: [![Python versions](https://img.shields.io/pypi/pyversions/pytest-snowflake_bdd.svg)](https://pypi.org/project/pytest-snowflake_bdd)** 
 - **Library Versions:**
     ```bash
      behave==1.2.6
