@@ -899,3 +899,27 @@ Expected result: I should see an error message for the phone field.
 Actual result: The form submits successfully without any validation error for the phone field, even though the phone format is incorrect. No error message is displayed.
 
 ![Screenshot](https://github.com/AdrianPricopie/Project-Testing-with-BDD/blob/main/Screenshots/Element_error_message_phone_Failure_26-03-2024.png)
+
+
+3. Forgot Password Form - Reset password with correct credentials
+
+Precondition: 
+1. I am on the homepage
+2. I click o the forgot password button
+3. I am redirected to the password reset page
+
+Steps to reproduce:
+1. I enter "John" in first name field
+2. I enter "Smith" in last name field
+3. I enter "Main street" in address field
+4. I enter "Anytown" in city field
+5. I enter "California" in state field
+6. I enter "123456" in zip code field
+7. I enter "456789" in SSN field
+8. I click on find my login info button
+
+Expected result: I should been redirected to the get information page
+
+Actual result: An error message appears instead of the password being successfully changed after correctly entering the required informations.
+
+![Screenshot](https://github.com/AdrianPricopie/Project-Testing-with-BDD/blob/main/reset_password_error_message.PNG)
