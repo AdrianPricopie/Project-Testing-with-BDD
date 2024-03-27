@@ -923,3 +923,31 @@ Expected result: I should been redirected to the get information page
 Actual result: An error message appears instead of the password being successfully changed after correctly entering the required informations.
 
 ![Screenshot](https://github.com/AdrianPricopie/Project-Testing-with-BDD/blob/main/reset_password_error_message.PNG)
+
+
+4. Register Form - Register with wrong credentials
+
+Precondition: 
+1. I am on the homepage
+2. I click on register button
+3. I am redirected to the register page
+
+Steps to reproduce:
+1. I introduce "092" in first name field
+2. I introduce "09d" in last name field
+3. I introduce "123" in address field
+4. I introduce "qwe" in city field
+5. I introduce "aaa" in state field
+6. I introduce "sss" in zip code field
+7. I introduce "1As" in phone field
+8. I introduce ",.;" in SSN field
+9. I introduce a new username in username field
+10. I introduce "password" in password field
+11. I introduce "password" in password confirmation filed
+12. I click register button
+
+Expected result: I should see an error message for wrong credentials
+
+Actual result: The form submits successfully without any errors, even though the credentials introduced are incorrect. Instead of an displayed error we get a welcome message for a new account registration.
+
+![Screenshot](https://github.com/AdrianPricopie/Project-Testing-with-BDD/blob/main/welcome_message_registration_with_wrong_credentials.PNG)
